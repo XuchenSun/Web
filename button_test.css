@@ -24,6 +24,7 @@
     content: '';
     position: absolute;
     left: var(--x);
+    left: var(--x);
     top: var(--y);
     width: var(--size);
     height: var(--size);
