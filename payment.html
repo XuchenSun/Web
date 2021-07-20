@@ -9,25 +9,25 @@
         <link rel="stylesheet" href="payment.css">
     </head>
     <body>
-        <div>
+        <div >
             <h1>PAYMENT</h1>
             <form action="" method="get"> 
-                <p>1. Select your plan</p> 
-                <label><input name="plan" type="radio" value="" />BASIC </label> 
-                <label><input name="plan" type="radio" value="" />ADVANCED </label> 
-                <label><input name="plan" type="radio" value="" />PRO </label>  
+                <p style="font-size: x-large">1. Select your plan</p>
+                <label style="color: #c62133"><input name="plan" type="radio" value="" />BASIC </label>
+                <label style="color: #abb63a"><input name="plan" type="radio" value="" />ADVANCED </label>
+                <label style="color:#389db6"><input name="plan" type="radio" value="" />PRO </label>
             </form> 
-            <div class="billing">
-                <p>2. Billing Information</p> 
+            <div class="billing" style="margin-top: 50px;width: 45%">
+                <p style="font-size: x-large">2. Billing Information</p>
                 <form action="" method="post">
-                  <label id="lbName">Name</label>  
+                  <label id="lbName" style="text-transform: uppercase">Name</label>
                   <br/> 
-                  <input type="text" class="class1" placeholder="Full Name"/> 
+                  <input type="text" class="class1" placeholder="Mathew Mozaff"/>
                   <br/>
                   <br/>
-                  <label>Billing Address</label> 
+                  <label style="text-transform: uppercase" >Billing Address</label>
                   <br/>
-                  <input class="class1" type="text" placeholder="1234 Main St."/> 
+                  <input class="class1" type="text" placeholder="Your Address"/>
                   <br/>
                   <br/>
                   <label id="lbCity">City</label>
@@ -37,7 +37,7 @@
                   <input type="text" id="postalCode"/> 
                   <br/>  
                   <br/> 
-                  <label id="lbCountry">Country</label>
+                  <label style="text-transform: uppercase">Country</label>
                   <br/> 
                   <select class="class1">
                     <option>Choose...</option>
@@ -64,8 +64,8 @@
                 </form>
             </div>
 
-            <div class="card">
-              <p>3. Credit Card Information</p> 
+            <div class="card" style="margin-top: 50px;width: 50%">
+              <p style="font-size: x-large">3. Credit Card Information</p>
               <form action="" method="post">
                 <label id="lbCarholderName">CARDHOLDER'S NAME</label>  
                 <br/> 

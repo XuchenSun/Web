@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>button test</title>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,26 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
-<style>
-    body {
+<style>body {
     display: flex;
-
-
-
-
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
 }
 
 .button {
-    position: absolute;
-    left: 85%;
-    top: 10%;
+    position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: white;
+    background: #f72359;
     padding: 1em 2em;
     border: none;
-    color: red;
+    color: white;
     font-size: 1.2em;
     cursor: pointer;
     outline: none;
@@ -60,10 +57,10 @@
 </style>
 <body>
 
-<button class="button" onclick="window.location.href='subpage/PricingPage.html'">
-    <span>TRY IT NOW</span>
+<button class="button" id="last_page_button">
+    <span>Hover me I'm awesome</span>
 </button>
-<script>document.querySelector('button').onmousemove = function (e) {
+<script>document.querySelector('#last_page_button').onmousemove = function (e) {
 
     var x = e.pageX - e.target.offsetLeft;
     var y = e.pageY - e.target.offsetTop;

@@ -12,14 +12,16 @@
 #postalCode{
   float:left;
   margin-left: 38px;
-
+  text-transform: uppercase;
 }
 #lbCity{
   float:left;
+  text-transform: uppercase;
 }
 #lbpost{
   float:left;
   margin-left: 162px;
+  text-transform: uppercase;
 }
 
 
@@ -53,6 +55,7 @@
   float:left;
   width:400px;
 }
+
 .card{
   float:left;
   width:400px;
@@ -63,5 +66,5 @@ body{
   margin-left: 40px;
 }
 h1{
-  margin-top:100px;
+  margin-top:80px;
 }
