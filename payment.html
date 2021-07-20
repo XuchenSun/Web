@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <link rel="stylesheet" href="payment.css">
+        <link rel="stylesheet" href="button_test.css">
+
     </head>
     <body>
         <div >
@@ -59,7 +61,7 @@
                   read to the Terms of Service & Privacy Policy. 
                   <br/>
                   <br/>
-                  <input type="submit" value="Download" id="submit"/> <br/>
+                  <input type="submit" disabled="disabled" value="Download" id="submit" style="position:absolute;left: 12%;top:80%" /> <br/>
                   <br/>
                 </form>
             </div>
@@ -74,7 +76,7 @@
                 <br/>
                 <label>CARD NUMBER</label> 
                 <br/>
-                <input class="class1" type="text" placeholder="4444 5555 6666 7777 88"/> 
+                <input class="class1" type="text" placeholder="4444 5555 6666 7777 88"/>
                 <br/>
                 <br/>
                 <label id="lbMonth">EXPIRY MONTH</label>
@@ -120,6 +122,13 @@
             
         </div>
 
-        
+        <button class="button_on_payment_page" id="last_page_button" style="position: absolute; left: 8%;top:80%" onclick="submitfunction()" >
+            <span>DOWNLOAD</span>
+        </button>
     </body>
+    <script src="button_test.js">
+        function submitfunction(){
+            document.getElementById("submit").disabled="able";
+        }
+    </script>
 </html>
