@@ -97,7 +97,7 @@
                                 before and from the comfort of your own home
                             </h2>
 
-                            <a style="position:absolute; z-index: 100" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
+                            <a style="position:absolute; z-index: 100; top: 72%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
 
                             <ul class="box">  
                                 <li class="on">  
@@ -134,17 +134,26 @@
                     <section class="panel" id="panel3" style="background-image: url(images/yellow_page.png);background-repeat: no-repeat;background-size: 100%">
                         <h1></h1>
                         <button class="button" id="button_in_page3_try_it_now"onclick="window.location.href='subpage/PricingPage.html'">
-                            <span>TRY IT NOW</span>
+                            <span style="color: #abb63a">TRY IT NOW</span>
+                        </button>
+                        <button class="button" id="button_in_page3_see_demo" onclick="window.location.href='subpage/PricingPage.html'" style="left: 45%; top:65%;width: 20%;height: 10%">
+                            <span style="color: #abb63a">SEE DEMO</span>
                         </button>
                     </section>
                     <section class="panel panelColor" id="panel4" style="background-image: url(images/black_page.png);background-repeat: no-repeat;background-size: 100%">
                         <h1></h1>
+
+                        <a style="position:absolute; z-index: 100;left: 70%; top: 15%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
                     </section>
                     <section class="panel" id="panel5" style="background-image: url(images/blue_page.png);background-repeat: no-repeat;background-size: 100%">
                         <h1></h1>
+                        <button class="button" id="button_in_page5_try_it_now"onclick="window.location.href='subpage/PricingPage.html'">
+                            <span style="color:skyblue">TRY IT NOW</span>
+                        </button>
                     </section>
                     <section class="panel panelColor" id="panel6" style="background-image: url(images/black2_page.png);background-repeat: no-repeat;background-size: 100%">
                         <h1>Section 6</h1>
+                        <a style="position:absolute; z-index: 100;left: 70%; top: 40%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
                     </section>
 
             
@@ -173,7 +182,43 @@
                 click_button_in_page2.target.style.setProperty('--y', y + 'px');
 
             };
+            document.querySelector('#button_in_page4_try_it_now').onmousemove = function (click_button_in_page2) {
+
+                var x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
+                var y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;
+
+                click_button_in_page2.target.style.setProperty('--x', x + 'px');
+                click_button_in_page2.target.style.setProperty('--y', y + 'px');
+
+            };
+            document.querySelector('#button_in_page5_try_it_now').onmousemove = function (click_button_in_page2) {
+
+                var x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
+                var y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;
+
+                click_button_in_page2.target.style.setProperty('--x', x + 'px');
+                click_button_in_page2.target.style.setProperty('--y', y + 'px');
+
+            };
+            document.querySelector('#button_in_page6_try_it_now').onmousemove = function (click_button_in_page2) {
+
+                var x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
+                var y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;
+
+                click_button_in_page2.target.style.setProperty('--x', x + 'px');
+                click_button_in_page2.target.style.setProperty('--y', y + 'px');
+
+            };
+            /*===================Button See Demo=====================*/
             document.querySelector('#button_in_page2_see_demo').onmousemove = function (click_button_in_page2) {
+
+                var x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
+                var y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;
+
+                click_button_in_page2.target.style.setProperty('--x', x + 'px');
+                click_button_in_page2.target.style.setProperty('--y', y + 'px');
+            };
+            document.querySelector('#button_in_page3_see_demo').onmousemove = function (click_button_in_page2) {
 
                 var x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
                 var y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;
