@@ -38,10 +38,10 @@ a{
 .nav input,.nav a{
     width:20%;
     height:1px;
-    line-height:34px;
+    line-height:1px;
     position:fixed;
     bottom:0;
-    cursor:pointer;
+
 }
 .nav input{
     opacity:0;

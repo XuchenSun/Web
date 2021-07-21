@@ -1,4 +1,4 @@
-/*======================for all sessions: scroll to navigation==========================*/
+/*======================Global function for scrolling==========================*/
 window.onload= function () {
     var scroll=document.getElementsByClassName("scroll")[0];
     var panel=document.getElementsByClassName("panel");
@@ -8,13 +8,14 @@ window.onload= function () {
     for(var i=0;i<panel.length;i++){
         panel[i].style.height=clientH+"px";
     }
-    /*scroll to navigation*/
+    /*navigation*/
     var inputC=document.getElementsByTagName("input");
+    // For Browser
     var wheel= function (event) {
         var delta=0;
-        if(!event)//for ie
+        if(!event)
             event=window.event;
-        if(event.wheelDelta){//ie,opera
+        if(event.wheelDelta){
             delta=event.wheelDelta/120;
         }else if(event.detail){
             delta=-event.detail/3;
@@ -33,15 +34,16 @@ window.onload= function () {
 };
 function handle(delta,arr) {
     var num;
-    for(var i=0;i<arr.length;i++){//get the checked element index
+    for(var i=0;i<arr.length;i++){//get index
         if(arr[i].checked){
             num=i;
         }
     }
-    if(delta>0 && num>0){//scroll up
+    //scroll up and down
+    if(delta>0 && num>0){
         num--;
         arr[num].checked=true;
-    }else if(delta<0 && num<5){//scrool down
+    }else if(delta<0 && num<5){
         num++;
         arr[num].checked=true;
     }
@@ -54,13 +56,13 @@ $(function(){
     var Time = 10000;// set 10s ==10000ms
     var num = 1000;// it needs 1s to display next picture when click
     var page = 0; 
-    var len = $( ".bn-alp .box li" ).length;// get the number of pictures  
+    var len = $( ".bn-alp .box li" ).length;// get all pictures
 
     $( ".bn-alp .box li" ).each(function(){  
         $(this).css( "opacity", 0 );  
         $(this).css( "background-image","url(" + $(this).find('img.bg').attr('src') + ")");  
         $( ".bn-alp .i" ).append('<i></i>');  
-    });   // setup all picuters' transparency as 0  
+    });
 
     $( ".bn-alp .box li:first" ).css( "opacity", 1 ); // setup default first picture's transparency as 1  
     $( ".bn-alp .i i" ).eq(0).addClass("on");  
@@ -70,37 +72,36 @@ $(function(){
         $( ".bn-alp .i i" ).eq(page).addClass("on").siblings('i').removeClass( "on" );     // change the small white point  
         $( ".bn-alp .box li" ).eq(page).addClass("on").animate({"opacity":1},num).siblings('li').removeClass( "on" ).animate({"opacity":0},num);// change picture  
     }  
-
+/* define the animation*/
     function run() 
     {  
         if( !$(".bn-alp .box li" ).is( ":animated" ))// check li if animated or not  
         {  
-        if( page == len - 1 )// when transit to the last picture  
+        if( page == len - 1 )
         {  
-            page = 0;  // set page = 0 and start play again from first  
+            page = 0;
             fun();  
-        } else {// continue to the next  
+        } else {
             page++;  
             fun();  
         }  
         }  
     }  
 
-    $(".bn-alp .i i").click( function()// click the small point to change picture 
+    $(".bn-alp .i i").click( function()
     {  
-        clearInterval( bn_alp );//when click the small point, old animation will be clear and start a new one。  
-        //if( !$( ".bn-alp .box li" ).is( ":animated" ) )  
-        //{  
-        var index = $( ".bn-alp .i i" ).index( this );// get the position of small point  
-        page = index;// sync to page  
+        clearInterval( bn_alp );
+
+        var index = $( ".bn-alp .i i" ).index( this );
+        page = index;
         fun();  
-        //}  
+
     }); 
 
-    $( ".bn-alp" ).hover(function()// when put mouse on picture, clear animation  
+    $( ".bn-alp" ).hover(function()
     {  
         clearInterval( bn_alp );  
-    },function()// when move out mouse, play animation again  
+    },function()
     {  
         bn_alp = setInterval( run, Time );  
     }).trigger( "mouseleave" );  
