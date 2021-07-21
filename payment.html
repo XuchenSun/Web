@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,41 +23,47 @@
                 <p style="font-size: x-large">2. Billing Information</p>
                 <form action="" method="post">
                   <label id="lbName" style="text-transform: uppercase">Name</label>
-                  <br/> 
-                  <input type="text" class="class1" placeholder="Mathew Mozaff"/>
                   <br/>
+                    <label>
+                        <input type="text" class="class1" placeholder="Mathew Mozaff"/>
+                    </label>
+                    <br/>
                   <br/>
                   <label style="text-transform: uppercase" >Billing Address</label>
                   <br/>
-                  <input class="class1" type="text" placeholder="Your Address"/>
-                  <br/>
+                    <label>
+                        <input class="class1" type="text" placeholder="Your Address"/>
+                    </label>
+                    <br/>
                   <br/>
                   <label id="lbCity">City</label>
                   <label id="lbpost">Postcode</label>
                   <br/>
-                  <input type="text" id="city"/>
-                  <input type="text" id="postalCode"/> 
+                    <label for="city"></label><input type="text" id="city"/>
+                    <label for="postalCode"></label><input type="text" id="postalCode"/>
                   <br/>  
                   <br/> 
                   <label style="text-transform: uppercase">Country</label>
-                  <br/> 
-                  <select class="class1">
-                    <option>Choose...</option>
-                    <option>Afghanistan</option>
-                    <option>Angola</option>
-                    <option>Armenia</option>
-                    <option>Azerbaijan</option>
-                    <option>Canada</option>
-                    <option>China</option>
-                    <option>France</option>
-                    <option>Germany</option>
-                    <option>Japan</option>
-                    <option>United States</option>
-                  </select>
+                  <br/>
+                    <label>
+                        <select class="class1">
+                          <option>Choose...</option>
+                          <option>Afghanistan</option>
+                          <option>Angola</option>
+                          <option>Armenia</option>
+                          <option>Azerbaijan</option>
+                          <option>Canada</option>
+                          <option>China</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Japan</option>
+                          <option>United States</option>
+                        </select>
+                    </label>
 
+                    <br/>
                   <br/>
-                  <br/>
-                  <input type="checkbox" name="checkbox" id="agree" />By continuing, I acknowledge that I have<br> 
+                    <label for="agree"></label><input type="checkbox" name="checkbox" id="agree" />By continuing, I acknowledge that I have<br>
                   read to the Terms of Service & Privacy Policy. 
                   <br/>
                   <br/>
@@ -70,19 +76,23 @@
               <p style="font-size: x-large">3. Credit Card Information</p>
               <form action="" method="post">
                 <label id="lbCarholderName">CARDHOLDER'S NAME</label>  
-                <br/> 
-                <input type="text" class="class1" placeholder="Full Name"/> 
                 <br/>
+                  <label>
+                      <input type="text" class="class1" placeholder="Full Name"/>
+                  </label>
+                  <br/>
                 <br/>
                 <label>CARD NUMBER</label> 
                 <br/>
-                <input class="class1" type="text" placeholder="4444 5555 6666 7777 88"/>
-                <br/>
+                  <label>
+                      <input class="class1" type="text" placeholder="4444 5555 6666 7777 88"/>
+                  </label>
+                  <br/>
                 <br/>
                 <label id="lbMonth">EXPIRY MONTH</label>
                 <label id="lbYear">EXPIRY YEAR</label>
                 <br/>
-                <select id="month">
+                  <label for="month"></label><select id="month">
                   <option>Choose...</option>
                   <option>01</option>
                   <option>02</option>
@@ -97,7 +107,7 @@
                   <option>11</option>
                   <option>12</option>
                 </select>
-                <select id="year">
+                  <label for="year"></label><select id="year">
                   <option>Choose...</option>
                   <option>2017</option>
                   <option>2018</option>
@@ -113,8 +123,10 @@
                 <br/> 
                 <label id="lbCVV">CVV</label>
                 <br/>
-                <input type="text" class="class1"/> 
-                <br/>
+                  <label>
+                      <input type="text" class="class1"/>
+                  </label>
+                  <br/>
                 <br/>
               </form>
               <footer>2019 &copy All Rights Reserved | Speer Technologies Incorporated</footer>
