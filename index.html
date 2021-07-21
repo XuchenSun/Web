@@ -20,56 +20,7 @@
         <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css"/>
 
         <script src="http://code.jquery.com/jquery-1.11.0.js"></script><!--session 1-->
-        <style>
-
-            body {
-                display: flex;
-
-
-
-
-            }
-
-            .button {
-                position: absolute;
-                left: 83%;
-                top: 7.3%;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                background: white;
-                padding: 1.2em 4em;
-                border: none;
-                color: red;
-                font-weight:bolder;
-
-                font-size: 1em;
-                cursor: pointer;
-                outline: none;
-                overflow: hidden;
-                border-radius: 100px;
-            }
-            .button span {
-                position: relative;
-                pointer-events: none;
-            }
-            .button::before {
-                --size: 0;
-                content: '';
-                position: absolute;
-                left: var(--x);
-                top: var(--y);
-                width: var(--size);
-                height: var(--size);
-                background: radial-gradient(circle closest-side, #4405f7, transparent);
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                transition: width .2s ease, height .2s ease;
-            }
-            .button:hover::before {
-                --size: 400px;
-            }
-        </style>
+      
     </head>
 
     <body>
