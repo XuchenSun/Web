@@ -70,95 +70,95 @@
         }
     </style>
     <body>
-        <div class="container">
-            <div class="nav">
-                <input type="radio" name="radio-set" checked id="nav1">
-                <a href="#panel1">Section 1</a>
-                <input type="radio" name="radio-set" id="nav2">
-                <a href="#panel2">Section 2</a>
+    <div class="container">
+        <div class="nav">
+            <input type="radio" name="radio-set" disabled="disabled" checked id="nav1">
+            <a href="#panel1" style="background-color:transparent;"></a>
+            <input type="radio" name="radio-set" disabled="disabled" id="nav2">
+            <a href="#panel2" style="background-color:transparent;"></a>
 
-                <input type="radio" name="radio-set" id="nav3">
-                <a href="#panel3">Section 3</a>
-                <input type="radio" name="radio-set" id="nav4">
-                <a href="#panel4">Section 4</a>
-                <input type="radio" name="radio-set" id="nav5">
-                <a href="#panel5">Section 5</a>
-                <input type="radio" name="radio-set" id="nav6">
-                <a href="#panel6">Section 6</a>
-
-
-                <div class="scroll">
-                    <section class="panel" id="panel1">
-                        <div class="bn-alp">  
-                            <h1 class="title">INTERACTIVE CONCERT EXPERIENCE</h1>
-                            <h2 class="subTitle">
-                                Experience your favourite artists like never<br/>
-                                before and from the comfort of your own home
-                            </h2>
-
-                            <a style="position:absolute; z-index: 100; top: 72%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
-
-                            <ul class="box">  
-                                <li class="on">  
-                                    <img alt="loading" src="images/I1.jpg" class="bg" />
-                                </li>  
-                                <li>  
-                                    <img alt="loading" src="images/I2.jpg" class="bg" />
-                                </li>  
-                                <li>  
-                                    <img alt="loading" src="images/I3.jpg" class="bg" />
-                                </li>  
-
-                            </ul> 
-                            <div class="i"></div>  
-                        </div> 
-                    </section>
-                    <section class="panel panelColor" id="panel2" style="background-image: url(images/red_page.png);background-repeat: no-repeat;background-size: 100%">
-                        <h1></h1>
-                        <button class="button" id="button_in_page2_try_it_now" onclick="window.location.href='subpage/PricingPage.html'">
-                            <span>TRY IT NOW</span>
-                        </button>
-                        <audio id="music_in_second_page" src="music/a_new_guy.wav" type="audio/wav"></audio>
+            <input type="radio" name="radio-set" disabled="disabled" id="nav3">
+            <a href="#panel3" style="background-color:transparent;"></a>
+            <input type="radio" name="radio-set" disabled="disabled" id="nav4">
+            <a href="#panel4" style="background-color:transparent;"></a>
+            <input type="radio" name="radio-set" disabled="disabled" id="nav5">
+            <a href="#panel5" style="background-color:transparent;"></a>
+            <input type="radio" name="radio-set" disabled="disabled" id="nav6">
+            <a href="#panel6" style="background-color:transparent;"></a>
 
 
-                        <button id="button_play_music" data-playing="false" role="switch" aria-checked="false" style="width: 140px;height: 140px;border-radius:50%;background-color: red;
+            <div class="scroll">
+                <section class="panel" id="panel1">
+                    <div class="bn-alp">
+                        <h1 class="title">INTERACTIVE CONCERT EXPERIENCE</h1>
+                        <h2 class="subTitle">
+                            Experience your favourite artists like never<br/>
+                            before and from the comfort of your own home
+                        </h2>
+
+                        <a style="position:absolute; z-index: 100; top: 72%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
+
+                        <ul class="box">
+                            <li class="on">
+                                <img alt="loading" src="images/I1.jpg" class="bg" />
+                            </li>
+                            <li>
+                                <img alt="loading" src="images/I2.jpg" class="bg" />
+                            </li>
+                            <li>
+                                <img alt="loading" src="images/I3.jpg" class="bg" />
+                            </li>
+
+                        </ul>
+                        <div class="i"></div>
+                    </div>
+                </section>
+                <section class="panel panelColor" id="panel2" style="background-image: url(images/red_page.png);background-repeat: no-repeat;background-size: 100%">
+                    <h1></h1>
+                    <button class="button" id="button_in_page2_try_it_now" onclick="window.location.href='subpage/PricingPage.html'">
+                        <span>TRY IT NOW</span>
+                    </button>
+                    <audio id="music_in_second_page" src="music/a_new_guy.wav" type="audio/wav"></audio>
+
+
+                    <button id="button_play_music" data-playing="false" role="switch" aria-checked="false" style="width: 140px;height: 140px;border-radius:50%;background-color: red;
                             border: 1px solid #d5d5d5;position: absolute;left: 73%;top: 82%">
-                            <span style="color: white;font-size: large">CLICK</span>
-                        </button>
-                        <button class="button" id="but_p2_s" onclick="window.location.href='subpage/PricingPage.html'" style="left: 9%; top:73%;width: 20%;height: 10%">
-                            <span>SEE DEMO</span>
-                        </button>
+                        <span style="color: white;font-size: large">CLICK</span>
+                    </button>
+                    <button class="button" id="but_p2_s" onclick="window.location.href='subpage/PricingPage.html'" style="left: 9%; top:73%;width: 20%;height: 10%">
+                        <span>SEE DEMO</span>
+                    </button>
 
-                    </section>
-                    <section class="panel" id="panel3" style="background-image: url(images/yellow_page.png);background-repeat: no-repeat;background-size: 100%">
-                        <h1></h1>
-                        <button class="button" id="button_in_page3_try_it_now" onclick="window.location.href='subpage/PricingPage.html'">
-                            <span style="color: #abb63a">TRY IT NOW</span>
-                        </button>
-                        <button class="button" id="button_in_page3_see_demo" onclick="window.location.href='subpage/PricingPage.html'" style="left: 45%; top:65%;width: 20%;height: 10%">
-                            <span style="color: #abb63a">SEE DEMO</span>
-                        </button>
-                    </section>
-                    <section class="panel panelColor" id="panel4" style="background-image: url(images/black_page.png);background-repeat: no-repeat;background-size: 100%">
-                        <h1></h1>
+                </section>
+                <section class="panel" id="panel3" style="background-image: url(images/yellow_page.png);background-repeat: no-repeat;background-size: 100%">
+                    <h1></h1>
+                    <button class="button" id="button_in_page3_try_it_now" onclick="window.location.href='subpage/PricingPage.html'">
+                        <span style="color: #abb63a">TRY IT NOW</span>
+                    </button>
+                    <button class="button" id="button_in_page3_see_demo" onclick="window.location.href='subpage/PricingPage.html'" style="left: 45%; top:65%;width: 20%;height: 10%">
+                        <span style="color: #abb63a">SEE DEMO</span>
+                    </button>
+                </section>
+                <section class="panel panelColor" id="panel4" style="background-image: url(images/black_page.png);background-repeat: no-repeat;background-size: 100%">
+                    <h1></h1>
 
-                        <a style="position:absolute; z-index: 100;left: 70%; top: 15%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
-                    </section>
-                    <section class="panel" id="panel5" style="background-image: url(images/blue_page.png);background-repeat: no-repeat;background-size: 100%">
-                        <h1></h1>
-                        <button class="button" id="but_p5" onclick="window.location.href='subpage/PricingPage.html'">
-                            <span style="color:skyblue">TRY IT NOW</span>
-                        </button>
-                    </section>
-                    <section class="panel panelColor" id="panel6" style="background-image: url(images/black2_page.png);background-repeat: no-repeat;background-size: 100%">
-                        <h1>Section 6</h1>
-                        <a style="position:absolute; z-index: 100;left: 70%; top: 40%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
-                    </section>
+                    <a style="position:absolute; z-index: 100;left: 70%; top: 15%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
+                </section>
+                <section class="panel" id="panel5" style="background-image: url(images/blue_page.png);background-repeat: no-repeat;background-size: 100%">
+                    <h1></h1>
+                    <button class="button" id="but_p5" onclick="window.location.href='subpage/PricingPage.html'">
+                        <span style="color:skyblue">TRY IT NOW</span>
+                    </button>
+                </section>
+                <section class="panel panelColor" id="panel6" style="background-image: url(images/black2_page.png);background-repeat: no-repeat;background-size: 100%">
+                    <h1>Section 6</h1>
+                    <a style="position:absolute; z-index: 100;left: 70%; top: 40%;text-decoration: none;align-items: center;" href="subpage/PricingPage.html" class="btn-mix-noborder">Try It Now</a>
+                </section>
 
-            
-                </div>
+
             </div>
         </div>
+    </div>
         <script src="index.js"></script>
         <script>
 
@@ -193,7 +193,9 @@
             };
 
             /*===================Button See Demo=====================*/
+            //"but" means button,"p2" means page2 and "s" means see demo
             document.querySelector('#but_p2_s').onmousemove = function (click_button_in_page2) {
+
 
                 let x = click_button_in_page2.pageX - click_button_in_page2.target.offsetLeft;
                 let y = click_button_in_page2.pageY - click_button_in_page2.target.offsetTop;

@@ -37,7 +37,7 @@ a{
 }
 .nav input,.nav a{
     width:20%;
-    height:34px;
+    height:1px;
     line-height:34px;
     position:fixed;
     bottom:0;
@@ -54,47 +54,9 @@ a{
     color:#fff;
     text-align:center;
     text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-    background-color: #e23a6e;
-}
-#nav1,#nav1 + a{
-    left:0%;
-}
-#nav2,#nav2 + a{
-    left:16.66%;
-}
-#nav3,#nav3 + a{
-    left:33.33%;
-}
-#nav4,#nav4 + a{
-    left:50%;
-}
-#nav5,#nav5 + a{
-    left:66.66%;
-}
-#nav6,#nav6 + a{
-    left:83.33%;
+
 }
 
-
-.nav input:checked + a,
-.nav input:checked:hover +a{
-    background-color:grey;
-}
-.nav input:checked + a:after{
-    content:"";
-    width:0;
-    height:0;
-    overflow:hidden;
-    border:20px solid transparent;
-    border-bottom-color:#821134;
-    position:absolute;
-    bottom:100%;
-    left:50%;
-    margin-left:-20px;
-}
-.nav input:hover + a{
-    background:#AD244f;
-}
 
 
 .scroll,.panel{
@@ -267,7 +229,7 @@ a{
 }
 
 
-/*•	Liquid Gradient CTA button*/
+/*•	Liquid Gradient CTA button from given document*/
 [class*="btn-"] {
     position:absolute;
     outline: 0;
